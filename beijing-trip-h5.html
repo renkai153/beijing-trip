@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Open Graph / 微信分享卡片 -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="北京两日行程方案（终版）· 5月2日-3日">
+    <meta property="og:description" content="天坛 → 天安门 → 景山 → 鼓楼 → 颐和园 → 法源寺 → 什刹海，含雨天备选方案">
+    <meta property="og:image" content="https://placehold.co/600x400/3b82f6/white?text=Beijing+Trip">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="北京行程助手">
+
+    <!-- WeChat 特定 -->
+    <meta itemprop="name" content="北京两日行程方案（终版）· 5月2日-3日">
+    <meta itemprop="description" content="天坛 → 天安门 → 景山 → 鼓楼 → 颐和园 → 法源寺 → 什刹海，含雨天备选方案">
+
+    <title>北京两日行程方案（终版）</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+            background: #f4f6f8;
+            color: #2c3e50;
+            line-height: 1.7;
+            padding: 16px 8px 36px;
+            -webkit-text-size-adjust: 100%;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+            padding: 24px 18px;
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #5a6c7d;
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+        .meta-card {
+            background: #f0f4f8;
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 24px;
+            font-size: 13px;
+            align-items: center;
+            line-height: 1.6;
+        }
+        .meta-card div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .meta-card strong {
+            color: #1e293b;
+        }
+        .weather {
+            background: #eef7ff;
+            border-left: 4px solid #3b82f6;
+            padding: 12px 14px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 24px 0 10px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #e9ebf0;
+            color: #111827;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin: 18px 0 8px;
+            color: #1e3a8a;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 18px;
+            font-size: 12px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            display: block;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        th {
+            background: #f1f5f9;
+            padding: 10px 8px;
+            text-align: left;
+            font-weight: 600;
+            color: #334155;
+            border-bottom: 2px solid #dce3e9;
+            white-space: nowrap;
+            font-size: 12px;
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #e9ebf0;
+            vertical-align: top;
+            color: #1e293b;
+            font-size: 12px;
+            min-width: 56px;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            font-size: 11px;
+            font-weight: 500;
+            padding: 2px 7px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-right: 3px;
+            white-space: nowrap;
+        }
+        .note {
+            background: #fef9e7;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin: 14px 0;
+            color: #92400e;
+            line-height: 1.6;
+        }
+        .list-item {
+            margin: 5px 0 5px 14px;
+            list-style-type: disc;
+            font-size: 13px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 28px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+        @media (max-width: 400px) {
+            .container {
+                padding: 16px 10px;
+                border-radius: 10px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            table {
+                font-size: 11px;
+            }
+            td, th {
+                padding: 6px 5px;
+                font-size: 11px;
+            }
+            .meta-card {
+                font-size: 12px;
+                gap: 6px 14px;
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>北京两日行程方案 · 终版</h1>
+        <div class="subtitle">2026年5月2日（周六）～ 5月3日（周日）</div>
+
+        <!-- 基础信息卡片 -->
+        <div class="meta-card">
+            <div><strong>酒店</strong> 如家华驿（崇文门）</div>
+            <div><strong>地址</strong> 东城区西花市大街39号</div>
+            <div><strong>入住</strong> 5月2日 14:00</div>
+            <div><strong>退房</strong> 5月3日 07:50前</div>
+        </div>
+
+        <div class="weather">
+            <div><strong>5月2日</strong> 阴有阵雨转多云 10-20℃ 北风3-4级阵风5-6级</div>
+            <div style="margin-top:4px;"><strong>5月3日</strong> 多云转晴 10-24℃ 微风</div>
+        </div>
+
+        <!-- 车次 -->
+        <div class="meta-card">
+            <div><strong>去程</strong> D1082 德州东 07:05 → 北京南 08:19</div>
+            <div><strong>回程</strong> 5月3日 北京南站 20:51 出发</div>
+        </div>
+
+        <!-- 预约清单 -->
+        <h2>预约清单 · 请立刻完成</h2>
+        <table>
+            <thead>
+                <tr><th>序号</th><th>项目</th><th>平台</th><th>时段</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>天坛公园联票（34元）</td><td>畅游公园/天坛公众号</td><td>5月2日上午</td></tr>
+                <tr><td>2</td><td>天坛东门行李寄存</td><td>途简单/存知己小程序</td><td>5月2日 08:50-11:30</td></tr>
+                <tr><td>3</td><td>天安门广场（免费）</td><td>天安门广场预约参观小程序</td><td>5月2日 15:00-17:00</td></tr>
+                <tr><td>4</td><td>颐和园联票（30元）</td><td>颐和园/畅游公园公众号</td><td>5月3日上午</td></tr>
+                <tr><td>5</td><td>往返高铁票</td><td>12306</td><td>D1082 / 5月3日20:51</td></tr>
+                <tr><td>6</td><td>酒店订单</td><td>预订平台</td><td>5月2日入住</td></tr>
+            </tbody>
+        </table>
+
+        <!-- 5月2日行程 -->
+        <h2>5月2日（周六） 有雨 · 核心策略：避雨追光</h2>
+        <p style="font-size:13px; color:#475569; margin-bottom:10px;"><strong>晚间动线</strong>：景山 → 鼓楼/什刹海晚餐 → 鼓楼打卡 → 烟袋斜街 → 杨梅竹斜街夜游 → 回酒店</p>
+
+        <table>
+            <thead>
+                <tr><th style="width:12%">时间</th><th style="width:14%">事项</th><th style="width:38%">原计划</th><th style="width:36%">雨天备选</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>06:30</td><td>出发</td><td>前往德州东站</td><td>—</td></tr>
+                <tr><td>07:05-08:19</td><td>高铁</td><td>D1082 → 北京南站</td><td>—</td></tr>
+                <tr><td>08:19-08:50</td><td>地铁</td><td>14号线→蒲黄榆换5号线→天坛东门A2口</td><td>—</td></tr>
+                <tr><td>08:50-09:00</td><td>寄存</td><td>天坛东门便利店（已预约）</td><td>—</td></tr>
+                <tr>
+                    <td><strong>09:00-11:10</strong></td>
+                    <td><strong>天坛公园</strong></td>
+                    <td>联票34元。东门进→祈年殿→回音壁→圜丘→南门出</td>
+                    <td><span class="tag">备选A</span> 长廊避雨游览<br><span class="tag">备选B</span> 只看祈年殿，原路返回</td>
+                </tr>
+                <tr><td>11:10-11:25</td><td>取行李</td><td>南门骑车/打车回东门</td><td>若已原路返回，直接取</td></tr>
+                <tr><td>11:25-12:00</td><td>午餐</td><td>老北京炸酱面（天坛东路店）</td><td>便利店简餐回酒店吃</td></tr>
+                <tr><td>12:00-12:10</td><td>回酒店</td><td>5号线→崇文门站</td><td>—</td></tr>
+                <tr>
+                    <td><strong>12:10-12:30</strong></td>
+                    <td>明城墙遗址公园</td>
+                    <td>登东南角楼（10元）看北京站</td>
+                    <td>角楼有顶可避雨 / 直接休息</td>
+                </tr>
+                <tr><td>12:30-14:00</td><td>休整</td><td>办理入住，充电休息</td><td>—</td></tr>
+                <tr><td>14:00-14:20</td><td>前往广场</td><td>步行至天安门安检口</td><td>穿防滑鞋，带折叠伞</td></tr>
+                <tr>
+                    <td><strong>15:00-17:00</strong></td>
+                    <td><strong>天安门广场</strong></td>
+                    <td>已预约，拍照纪念碑/城楼</td>
+                    <td><span class="tag">推荐</span> 雨后拍倒影<br>风大提前去景山</td>
+                </tr>
+                <tr>
+                    <td><strong>17:00-18:30</strong></td>
+                    <td><strong>景山公园</strong></td>
+                    <td>门票2元，万春亭俯瞰故宫全景</td>
+                    <td>山路慢行 / 先逛寿皇殿 / 直接吃饭</td>
+                </tr>
+                <tr>
+                    <td><strong>18:30-19:30</strong></td>
+                    <td>晚餐</td>
+                    <td>什刹海/鼓楼附近：烤肉季、姚记炒肝、馄饨侯</td>
+                    <td>也可景山附近解决</td>
+                </tr>
+                <tr>
+                    <td><strong>19:30-20:15</strong></td>
+                    <td>鼓楼+烟袋斜街</td>
+                    <td>鼓楼夜景打卡 → 穿烟袋斜街 → 什刹海前海</td>
+                    <td>注意地面积水防滑</td>
+                </tr>
+                <tr>
+                    <td><strong>20:15-21:00</strong></td>
+                    <td><strong>杨梅竹斜街</strong></td>
+                    <td>夜游文艺胡同（模范书局、Soloist咖啡）</td>
+                    <td>体力不足可缩短</td>
+                </tr>
+                <tr><td>21:00-21:30</td><td>返回酒店</td><td>步行/地铁回崇文门</td><td>—</td></tr>
+            </tbody>
+        </table>
+        <div class="note">
+            鸟巢夜景已取消，把夜晚的从容留给鼓楼和杨梅竹斜街，雨后的胡同更有北京味道。
+        </div>
+
+        <!-- 5月3日行程 -->
+        <h2>5月3日（周日） 晴 · 动线：皇家园林 → 古刹美食 → 什刹海 → 北海</h2>
+        <table>
+            <thead>
+                <tr><th style="width:12%">时间</th><th style="width:18%">事项</th><th>详情</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>07:30-07:50</td><td>起床退房</td><td>行李全部带走</td></tr>
+                <tr><td>07:50-08:20</td><td>去南站</td><td>崇文门→2号线→宣武门换4号线→北京南站</td></tr>
+                <tr><td>08:20-08:30</td><td>寄存行李</td><td>北京南站地下一层官方寄存（20-30元/件）</td></tr>
+                <tr><td>08:30-09:10</td><td>去颐和园</td><td>4号线直达西苑站，打车/公交至北宫门</td></tr>
+                <tr><td><strong>09:20-11:30</strong></td><td><strong>颐和园</strong></td><td>联票30元。北宫门→苏州街→佛香阁→长廊→石舫→东宫门出</td></tr>
+                <tr><td>11:30-12:15</td><td>午餐</td><td>东宫门外西四包子铺（包子+炒肝）</td></tr>
+                <tr><td>12:15-13:00</td><td>去法源寺</td><td>西苑站4号线直达菜市口D口</td></tr>
+                <tr><td><strong>13:00-13:30</strong></td><td><strong>法源寺</strong></td><td>免费，唐代古刹，游客稀少</td></tr>
+                <tr><td><strong>13:30-14:00</strong></td><td><strong>牛街美食</strong></td><td>洪记牙签肉、白记驴打滚、聚宝源羊肉串</td></tr>
+                <tr><td>14:00-14:30</td><td>去什刹海</td><td>广安门内站7号线→珠市口换8号线→什刹海站A2口</td></tr>
+                <tr><td><strong>14:30-17:30</strong></td><td><strong>什刹海+后海</strong></td><td>前海南沿→银锭桥→后海北沿→烟袋斜街。17:30蓝调时刻拍照</td></tr>
+                <tr><td><strong>17:30-18:15</strong></td><td><strong>北海公园</strong></td><td>门票5元。北门进→静心斋→白塔→南门出</td></tr>
+                <tr><td>18:15-18:50</td><td>返回南站</td><td>北海北站6号线→平安里换4号线→北京南站</td></tr>
+                <tr><td>18:50-19:10</td><td>取行李</td><td>地下一层取行李</td></tr>
+                <tr><td>19:10-20:51</td><td>候车</td><td>安检进站，时间充裕</td></tr>
+                <tr><td><strong>20:51</strong></td><td><strong>返程</strong></td><td>高铁回德州，旅程结束</td></tr>
+            </tbody>
+        </table>
+
+        <!-- 装备 -->
+        <h2>装备清单</h2>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin:10px 0;">
+            <span style="background:#eef2ff; padding:7px 12px; border-radius:18px; font-size:13px;">折叠伞</span>
+            <span style="background:#eef2ff; padding:7px 12px; border-radius:18px; font-size:13px;">防滑防水鞋</span>
+            <span style="background:#eef2ff; padding:7px 12px; border-radius:18px; font-size:13px;">薄羽绒服/冲锋衣</span>
+            <span style="background:#eef2ff; padding:7px 12px; border-radius:18px; font-size:13px;">充电宝</span>
+            <span style="background:#eef2ff; padding:7px 12px; border-radius:18px; font-size:13px;">身份证</span>
+            <span style="background:#eef2ff; padding:7px 12px; border-radius:18px; font-size:13px;">离线地图</span>
+        </div>
+
+        <h2>雨中游园小贴士</h2>
+        <ul style="margin-left:18px; font-size:13px; color:#334155;">
+            <li class="list-item"><strong>古建廊道避雨</strong>：天坛长廊、颐和园长廊都是数百米有顶走廊。</li>
+            <li class="list-item"><strong>雨后黄金时刻</strong>：雨停后1-2小时空气最通透，景山看故宫、广场拍倒影。</li>
+            <li class="list-item"><strong>夜间杨梅竹</strong>：晚上人少安静，书店和酒吧暖光出片。</li>
+            <li class="list-item"><strong>保持灵活</strong>：五一排队可能更长，备选方案随时可用。</li>
+        </ul>
+
+        <footer>
+            祝你雨天也玩得尽兴，北京总有惊喜
+        </footer>
+    </div>
+</body>
+</html>
